@@ -36,7 +36,7 @@ double pim::fermiMomentum() {
   bool kFermi = true;
   while ( kFermi ) {
     double fProton_Rand_Mom_Col      = fRandom->Uniform( 0, 300.0);
-    double fProton_Rand_Mom_Col_Prob = fRandom->Uniform( fProb[300], fProb[0] );
+    double fProton_Rand_Mom_Col_Prob = fRandom->Uniform( fProb[299], fProb[0] );
     int    fProton_Mom_Int           = std::ceil( fProton_Rand_Mom_Col );
     double f3He_Value                = fProb[ fProton_Mom_Int - 1 ];
 
